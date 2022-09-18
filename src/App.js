@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { db } from "./firebase";
+import { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+// Components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
 
 function App() {
+  // const [names, setName] = useState([]);
+
+  // useEffect(() => {
+  //   db.collection("hello").onSnapshot((snapshot) => {
+  //     setName(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })));
+  //   });
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+      <Navbar/>
+      <Routes>
+          <Route exact path="/" element={<Homepage/>}/>
+          <Route path="about" element=""/>
+      </Routes>
+      <Footer/>
+      </div>
+    </Router>
   );
 }
 
