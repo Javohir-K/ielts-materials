@@ -17,7 +17,7 @@
     font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     gap: 5px;
-    
+    user-select: none;
 }
 .nav__logo p{
     color: var(--white-main);

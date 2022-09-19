@@ -1,7 +1,21 @@
+.line{
+    width: 100%;
+    padding: 0 10%;
+    margin:  20px 0;
+}
+.line__inner{
+    width: 100% ;
+    height: 2px ;
+    background: var(--white-main);
+    opacity: 0.4;
+}
+
+
 .homepage{
     height: 90vh;
     background: url(../../img/bg2.jpg) rgba(0, 0, 0, 0.8);
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-blend-mode: multiply;
     display: flex;
@@ -37,4 +51,91 @@
 }
 .hero__btn:hover{
     background-color: blueviolet;
+}
+
+.our-products{
+    padding: 0px 10%;
+    margin-top: 40px;
+}
+
+.product-list{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.product{
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+.product:hover{
+    transform: translateY(2px);
+}
+.product > i {
+    font-size: 44px;
+}
+.pr1{
+    background: var(--bg-purple);
+}
+.pr2{
+    background: var(--bg-blue);
+}
+.pr3{
+    background: var(--bg-red);
+}
+
+/* Self study modules */
+
+.self-study-modules{
+    padding: 20px 10%;
+}
+
+
+
+.ss__modules{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.module{
+    flex: 1;
+    background: var(--bg-sec);
+    padding: 40px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.module:hover{
+    transform: translateY(2px);
+}
+
+.ss__sections{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.ss_sec{
+    flex: 1;
+    background: var(--bg-sec);
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
 }

@@ -4,7 +4,9 @@
   --bg-purple: #6b39be;
   --bg-red: #e62661;
   --bg-blue: #138be2;
+  --bg-yellow: #e7db9d;
   --white-main: #f9f8fb;
+  --gray-text: #c2bbbb;
 }
 
 * {
@@ -24,6 +26,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.dark-text{
+  color: var(--gray-text);
 }
 
 h1,
