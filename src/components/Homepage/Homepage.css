@@ -5,7 +5,7 @@
 }
 .line__inner{
     width: 100% ;
-    height: 2px ;
+    height: 1px ;
     background: var(--white-main);
     opacity: 0.4;
 }
@@ -116,6 +116,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 5px;
     cursor: pointer;
     transition: .2s;
 }
@@ -138,4 +139,9 @@
     justify-content: center;
     gap: 10px;
     font-size: 24px;
+    cursor: pointer;
+    transition: .2s;
+}
+.ss_sec:hover{
+    transform: translateY(2px);
 }
